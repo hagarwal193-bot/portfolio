@@ -3,13 +3,53 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Harsh Agarwal — Human Resource &amp; Admin Lead</title>
-<meta name="description" content="Harsh Agarwal — Human Resource & Admin Lead. Recruitment, onboarding, payroll, statutory compliance, HRMS & people analytics." />
+<title>Harsh Agarwal | HR &amp; Admin Lead | HR Operations &amp; People Management</title>
+<meta name="description" content="Harsh Agarwal is an HR &amp; Admin Lead specialising in HR operations, recruitment, payroll, compliance, administration and HR technology solutions. Promoted June 2026 at Ashish Polymers." />
+<meta name="keywords" content="HR Admin Lead, HR Executive India, Talent Acquisition, HR Operations, Payroll Administration, HRMS, Employee Engagement, Recruitment Specialist, Ashish Polymers, Harsh Agarwal, Salary Analyzer" />
+<meta name="author" content="Harsh Agarwal" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Harsh Agarwal — HR &amp; Admin Lead | Ashish Polymers" />
+<meta property="og:description" content="HR &amp; Admin Lead at Ashish Polymers. Promoted June 2026. Experienced in talent acquisition, full-cycle HR operations, payroll, statutory compliance, HRMS and employee engagement. Also creator of Salary Analyzer — a live HR-Tech web application." />
+<meta property="og:url" content="https://harsh-agarwal-hr.vercel.app/" />
+<meta property="og:site_name" content="Harsh Agarwal — HR Portfolio" />
+<meta property="profile:first_name" content="Harsh" />
+<meta property="profile:last_name" content="Agarwal" />
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Harsh Agarwal — HR &amp; Admin Lead" />
+<meta name="twitter:description" content="HR &amp; Admin Lead at Ashish Polymers (promoted June 2026). Talent acquisition, HR operations, payroll, compliance, HRMS — and independently built Salary Analyzer, a live HR-Tech app." />
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Harsh Agarwal",
+  "jobTitle": "HR &amp; Admin Lead",
+  "worksFor": { "@type": "Organization", "name": "Ashish Polymers" },
+  "email": "mailto:hagarwal193@gmail.com",
+  "url": "https://harsh-agarwal-hr.vercel.app/",
+  "description": "HR &amp; Admin Lead with experience in talent acquisition, onboarding, payroll administration, statutory compliance, HRMS management and employee engagement.",
+  "knowsAbout": [
+    "Talent Acquisition","HR Operations","Payroll Administration","HRMS","Employee Engagement",
+    "Statutory Compliance","Onboarding","HR Documentation","Salary Analyzer"
+  ],
+  "alumniOf": [
+    {"@type":"CollegeOrUniversity","name":"Dr. A.P.J. Abdul Kalam Technical University"},
+    {"@type":"CollegeOrUniversity","name":"Mahatma Jyotiba Phule Rohilkhand University"}
+  ]
+}
+</script>
 
 <!-- Tailwind CSS via CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 
 <!-- Google Fonts -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -52,6 +92,71 @@
 
 
   /* ============ DARK / LIGHT MODE ============ */
+  /* ============ ICON COLOR FIX IN DARK MODE ============ */
+  /* Scroll rail buttons */
+  [data-theme="dark"] .rail-track .rail-dot { background: #46566B; }
+  [data-theme="dark"] .rail-track .rail-dot.active { background: #15B8A6; }
+
+  /* Nav rail up/down arrow buttons & testimonial prev/next */
+  [data-theme="dark"] #railUp, [data-theme="dark"] #railDown,
+  [data-theme="dark"] #tPrev, [data-theme="dark"] #tNext {
+    background: #13202F;
+    border-color: rgba(255,255,255,0.12);
+    color: #C5D5E8;
+  }
+  [data-theme="dark"] #railUp:hover, [data-theme="dark"] #railDown:hover,
+  [data-theme="dark"] #tPrev:hover, [data-theme="dark"] #tNext:hover {
+    border-color: #15B8A6;
+    color: #3FD9C6;
+  }
+
+  /* Nav LinkedIn "Connect" button (dark navy bg → lighter in dark mode) */
+  [data-theme="dark"] header a[href*="linkedin"].hidden { background: #15396B; }
+
+  /* Back to top button */
+  [data-theme="dark"] #toTop { background: #13202F; border: 1px solid rgba(255,255,255,0.1); }
+
+  /* Hamburger button */
+  [data-theme="dark"] #menuBtn {
+    border-color: rgba(255,255,255,0.15);
+    color: #C5D5E8;
+  }
+
+  /* Theme toggle sun icon color in dark mode */
+  [data-theme="dark"] .theme-icon-sun { color: #9AA6B8; }
+  [data-theme="dark"] .theme-icon-moon { color: #3FD9C6; }
+
+  /* Skill & competency cards inner text */
+  [data-theme="dark"] .lift .text-navy { color: #C5D5E8 !important; }
+  [data-theme="dark"] .lift .text-slate-soft { color: #7A8FA5 !important; }
+  [data-theme="dark"] .tool-chip .text-navy { color: #C5D5E8 !important; }
+  [data-theme="dark"] .tool-chip .text-slate-soft { color: #7A8FA5 !important; }
+
+  /* About/hero section meta card bg */
+  [data-theme="dark"] .bg-paper { background-color: #0F1C2A !important; }
+
+  /* Eyebrow text stays visible */
+  [data-theme="dark"] .eyebrow { color: #3FD9C6 !important; }
+
+  /* Timeline dots ring */
+  [data-theme="dark"] .ring-navy\/10 { --tw-ring-color: rgba(255,255,255,0.08) !important; }
+
+  /* Footer nav links */
+  [data-theme="dark"] .footer-nav-link { color: rgba(255,255,255,0.55) !important; }
+  [data-theme="dark"] .footer-nav-link:hover { color: #3FD9C6 !important; }
+
+  /* Testimonial cards */
+  [data-theme="dark"] .t-slide .bg-white { background-color: #13202F !important; }
+  [data-theme="dark"] .t-slide .text-navy { color: #C5D5E8 !important; }
+  [data-theme="dark"] .t-slide .border-navy\/5 { border-color: rgba(255,255,255,0.06) !important; }
+  [data-theme="dark"] .t-slide .text-slate-soft { color: #7A8FA5 !important; }
+
+  /* Frame deco lines on hero photo */
+  [data-theme="dark"] .frame-deco { border-color: rgba(21,184,166,0.4) !important; }
+
+  /* About dark section stats card */
+  [data-theme="dark"] .text-slate { color: #9AA6B8 !important; }
+
   :root {
     --bg-page: #F6F8FA;
     --bg-card: #FFFFFF;
@@ -117,6 +222,135 @@
     *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   }
 
+
+
+  /* Hero ambient glow */
+  .hero-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    animation: heroFloat 8s ease-in-out infinite;
+  }
+  @keyframes heroFloat {
+    0%, 100% { transform: translateY(0) scale(1); opacity: .35; }
+    50%       { transform: translateY(-18px) scale(1.06); opacity: .55; }
+  }
+  .hero-glow-b {
+    animation-delay: 3s;
+    animation-duration: 10s;
+  }
+  /* ============ CAREER JOURNEY ============ */
+  .cj-line { position: absolute; left: 20px; top: 28px; bottom: 0; width: 2px; background: linear-gradient(to bottom, #15B8A6, rgba(11,35,64,0.1)); }
+  .cj-dot { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  @keyframes promotionPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(21,184,166,0.5); } 50% { box-shadow: 0 0 0 8px rgba(21,184,166,0); } }
+  .cj-dot.promoted { animation: promotionPulse 2.5s ease-in-out infinite; }
+
+  /* Reveal animations */
+  [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .65s ease, transform .65s ease; }
+  [data-reveal].visible { opacity: 1; transform: translateY(0); }
+  [data-reveal]:nth-child(2) { transition-delay: .1s; }
+  [data-reveal]:nth-child(3) { transition-delay: .18s; }
+  [data-reveal]:nth-child(4) { transition-delay: .26s; }
+  [data-reveal]:nth-child(5) { transition-delay: .34s; }
+
+
+  /* ===== Experience expand/collapse ===== */
+  .exp-bullet {
+    display: flex; gap: 10px; font-size: .9rem; line-height: 1.55;
+    color: var(--color-slate, #46566B);
+  }
+  .exp-bullet::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%;
+    background: #15B8A6; margin-top: 7px; flex-shrink: 0;
+  }
+  .exp-extra { display: none; }
+  .exp-extra.visible { display: flex; animation: fadeSlideIn .3s ease forwards; }
+  @keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== What I Do cards ===== */
+  .wid-card {
+    border-radius: 16px; padding: 22px 20px;
+    transition: transform .25s ease, box-shadow .25s ease;
+    cursor: default;
+  }
+  .wid-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 40px -16px rgba(11,35,64,0.18);
+  }
+  .wid-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  /* ===== Career Snapshot Section ===== */
+  .snapshot-card {
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .snapshot-card:hover { transform: translateY(-4px); }
+  /* ===== Career Journey desktop connector arrows ===== */
+  .cj-connector { display: none; }
+  @media (min-width: 768px) { .cj-connector { display: flex; } }
+
+  /* ===== Salary Analyzer featured card glow ring ===== */
+  .salary-analyzer-card {
+    transition: box-shadow .3s ease, transform .3s ease;
+  }
+  .salary-analyzer-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 0 2px rgba(21,184,166,0.45), 0 28px 56px -20px rgba(21,184,166,0.25);
+  }
+
+  /* ===== Internal Promotion Banner ===== */
+  .promo-banner {
+    animation: promoBannerIn 0.8s cubic-bezier(0.22,1,0.36,1) both;
+  }
+  @keyframes promoBannerIn {
+    from { opacity: 0; transform: translateX(-16px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  /* ===== Experience timeline line animated fill ===== */
+  .timeline-spine {
+    background: linear-gradient(to bottom, #15B8A6 0%, rgba(11,35,64,0.1) 100%);
+  }
+
+  /* ===== Button microinteractions ===== */
+  .lift { transition: transform .25s ease, box-shadow .25s ease; }
+  .lift:hover { transform: translateY(-3px); box-shadow: 0 12px 28px -8px rgba(11,35,64,0.15); }
+
+  /* ===== Tag chip hover ===== */
+  .tag-chip { transition: background .2s ease, border-color .2s ease; }
+  .tag-chip:hover { border-color: rgba(21,184,166,0.5); background-color: rgba(21,184,166,0.08); }
+
+  /* ===== Nav link underline slide ===== */
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0; height: 2px;
+    background: #15B8A6;
+    transition: width .25s ease;
+    border-radius: 2px;
+  }
+  .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+  @media print {
+    header, footer, #back-to-top, .rail-track, #mobileMenu,
+    .hero-glow, .blueprint-bg::before { display: none !important; }
+    body { background: white; color: black; font-size: 12pt; }
+    section { page-break-inside: avoid; padding: 16pt 0; scroll-margin-top: 0; }
+    a { color: inherit; text-decoration: underline; }
+    h2 { font-size: 16pt; }
+    h3 { font-size: 13pt; }
+    .shadow-card, .shadow-soft { box-shadow: none; }
+    .glass-strong, .glass { backdrop-filter: none; }
+  }
   :focus-visible { outline: 2px solid #15B8A6; outline-offset: 3px; border-radius: 4px; }
 
   /* dotted blueprint texture */
@@ -264,10 +498,176 @@
   #mobileMenu.hidden-menu { opacity: 0; visibility: hidden; }
 
   ::selection { background: #15B8A6; color: #06162C; }
+
+  /* ===== Hero Promotion Badge ===== */
+  .promo-hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid rgba(21,184,166,0.4); border-radius: 999px;
+    padding: 6px 16px; font-size: .75rem; font-weight: 700;
+    letter-spacing: .08em; color: #0E8C7E;
+    background: rgba(21,184,166,0.08);
+    animation: badgeGlow 3s ease-in-out infinite;
+  }
+  .promo-hero-badge .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #15B8A6; display: inline-block;
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+  @keyframes badgeGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(21,184,166,0); border-color: rgba(21,184,166,0.4); }
+    50%       { box-shadow: 0 0 14px 3px rgba(21,184,166,0.16); border-color: rgba(21,184,166,0.7); }
+  }
+
+/* ╔══════════════════════════════════════════════════════════════╗
+   ║  PREMIUM ANIMATION SYSTEM — v4                               ║
+   ╚══════════════════════════════════════════════════════════════╝ */
+
+/* ─── Scroll progress bar ─────────────────────────────────────────── */
+#scroll-progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:999;background:transparent}
+#scroll-progress-fill{height:100%;width:0%;background:linear-gradient(90deg,#0E8C7E,#15B8A6,#34d8c4);transition:width .1s linear;border-radius:0 2px 2px 0}
+
+/* ─── Reveal system ───────────────────────────────────────────────── */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .65s cubic-bezier(.22,1,.36,1),transform .65s cubic-bezier(.22,1,.36,1)}
+.rv.in{opacity:1;transform:translateY(0)}
+.rv-left{opacity:0;transform:translateX(-24px);transition:opacity .65s cubic-bezier(.22,1,.36,1),transform .65s cubic-bezier(.22,1,.36,1)}
+.rv-left.in{opacity:1;transform:translateX(0)}
+.rv-right{opacity:0;transform:translateX(24px);transition:opacity .65s cubic-bezier(.22,1,.36,1),transform .65s cubic-bezier(.22,1,.36,1)}
+.rv-right.in{opacity:1;transform:translateX(0)}
+.rv-scale{opacity:0;transform:scale(.94);transition:opacity .65s cubic-bezier(.22,1,.36,1),transform .65s cubic-bezier(.22,1,.36,1)}
+.rv-scale.in{opacity:1;transform:scale(1)}
+
+/* ─── Hero stagger system ─────────────────────────────────────────── */
+.hero-seq{opacity:0;transform:translateY(20px);will-change:opacity,transform}
+.hero-seq.ready{animation:heroSeq .65s cubic-bezier(.22,1,.36,1) forwards}
+@keyframes heroSeq{to{opacity:1;transform:translateY(0)}}
+
+/* ─── Promotion badge ─────────────────────────────────────────────── */
+@keyframes badgePulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(21,184,166,0),border-color:rgba(21,184,166,.4)}
+  50%    {box-shadow:0 0 0 8px rgba(21,184,166,0),border-color:rgba(21,184,166,.75);background:rgba(21,184,166,.14)}
+}
+.promo-hero-badge{animation:badgePulse 3.2s ease-in-out infinite!important}
+
+/* ─── Career Journey timeline draw ───────────────────────────────── */
+.cj-spine{
+  position:absolute;left:50%;top:0;width:2px;
+  background:linear-gradient(to bottom,#15B8A6,rgba(11,35,64,.12));
+  transform:translateX(-50%);height:0%;
+  transition:height 1.6s cubic-bezier(.22,1,.36,1);
+}
+.cj-spine.drawn{height:100%}
+.cj-node{
+  width:38px;height:38px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;transition:box-shadow .4s ease,transform .35s ease;
+}
+.cj-node.promoted-node{
+  animation:nodeGlow 2.8s ease-in-out infinite;
+}
+@keyframes nodeGlow{
+  0%,100%{box-shadow:0 0 0 0 rgba(21,184,166,0)}
+  50%    {box-shadow:0 0 0 10px rgba(21,184,166,.2)}
+}
+
+/* ─── Experience timeline ─────────────────────────────────────────── */
+.tl-dot-active{
+  animation:tlDotPulse 2.4s ease-in-out infinite;
+}
+@keyframes tlDotPulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(21,184,166,0)}
+  50%    {box-shadow:0 0 0 8px rgba(21,184,166,0)}
+}
+.promoted-milestone{
+  position:relative;
+}
+.promoted-milestone::before{
+  content:'';position:absolute;inset:-8px;border-radius:24px;
+  background:linear-gradient(135deg,rgba(21,184,166,.08),rgba(21,184,166,.02));
+  border:1px solid rgba(21,184,166,.2);pointer-events:none;
+  animation:milestoneGlow 3s ease-in-out infinite;
+}
+@keyframes milestoneGlow{
+  0%,100%{border-color:rgba(21,184,166,.2);background:linear-gradient(135deg,rgba(21,184,166,.06),rgba(21,184,166,.01))}
+  50%    {border-color:rgba(21,184,166,.45);background:linear-gradient(135deg,rgba(21,184,166,.13),rgba(21,184,166,.04))}
+}
+
+/* ─── Handbook 3D tilt ────────────────────────────────────────────── */
+.handbook-tilt-wrap{
+  perspective:900px;cursor:default;
+  transition:transform .2s ease;
+}
+.handbook-tilt-inner{
+  transition:transform .18s cubic-bezier(.22,1,.36,1),box-shadow .18s ease;
+  transform-style:preserve-3d;will-change:transform;
+}
+@keyframes bookFloat{
+  0%,100%{transform:translateY(0) rotate(.4deg)}
+  50%    {transform:translateY(-10px) rotate(-.4deg)}
+}
+.book-float{animation:bookFloat 5s ease-in-out infinite}
+
+/* ─── Skills ─────────────────────────────────────────────────────── */
+.skill-bar-track{height:6px;border-radius:6px;background:rgba(11,35,64,.08);overflow:hidden}
+.skill-bar-fill{height:100%;width:0%;border-radius:6px;background:linear-gradient(90deg,#0E8C7E,#15B8A6,#34d8c4);transition:width 1.1s cubic-bezier(.22,1,.36,1)}
+
+/* ─── What I Do cards stagger ─────────────────────────────────────── */
+.wid-stagger{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
+.wid-stagger.in{opacity:1;transform:translateY(0)}
+.wid-icon svg{transition:transform .25s ease}
+.wid-card:hover .wid-icon svg{transform:scale(1.1) rotate(4deg)}
+
+/* ─── Project cards ───────────────────────────────────────────────── */
+.proj-lift{transition:transform .28s cubic-bezier(.22,1,.36,1),box-shadow .28s ease,border-color .28s ease}
+.proj-lift:hover{transform:translateY(-7px);box-shadow:0 20px 48px -16px rgba(11,35,64,.18)}
+.proj-lift .proj-arrow{transition:transform .25s ease}
+.proj-lift:hover .proj-arrow{transform:translate(3px,-3px)}
+.salary-lift:hover{box-shadow:0 0 0 2px rgba(21,184,166,.45),0 20px 48px -16px rgba(21,184,166,.22)!important}
+
+/* ─── Buttons micro ───────────────────────────────────────────────── */
+a.btn-micro,button.btn-micro{transition:transform .22s ease,box-shadow .22s ease}
+a.btn-micro:hover,button.btn-micro:hover{transform:translateY(-2px);box-shadow:0 8px 20px -8px rgba(11,35,64,.2)}
+a.btn-micro:active,button.btn-micro:active{transform:scale(.97)}
+
+/* ─── Navbar glass transition ─────────────────────────────────────── */
+header{transition:background .35s ease,box-shadow .35s ease,backdrop-filter .35s ease}
+
+/* ─── Nav link underline ──────────────────────────────────────────── */
+.nav-link{position:relative}
+.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#15B8A6;border-radius:2px;transition:width .25s ease}
+.nav-link:hover::after,.nav-link.active::after{width:100%}
+
+/* ─── Back to top ─────────────────────────────────────────────────── */
+#toTop{transition:opacity .3s ease,transform .3s ease,box-shadow .25s ease;opacity:0;transform:scale(.7)}
+#toTop.show{opacity:1;transform:scale(1)}
+#toTop:hover{transform:scale(1.1) translateY(-2px);box-shadow:0 10px 24px -8px rgba(11,35,64,.25)}
+
+/* ─── Contact CTA entrance ────────────────────────────────────────── */
+.contact-cta-glow:hover{
+  box-shadow:0 0 0 3px rgba(21,184,166,.25),0 12px 32px -10px rgba(21,184,166,.3)!important;
+}
+
+/* ─── Scroll-triggered section divider ───────────────────────────── */
+.section-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(11,35,64,.08),transparent);margin:0}
+
+/* ─── Preloader polish ────────────────────────────────────────────── */
+@keyframes preloaderReveal{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+#preloader{transition:opacity .5s ease,visibility .5s ease}
+#preloader.hide{opacity:0!important;visibility:hidden!important;pointer-events:none}
+
+/* ─── GPU hint ────────────────────────────────────────────────────── */
+.hero-seq,.rv,.rv-left,.rv-right,.rv-scale,.cj-spine,.handbook-tilt-inner{will-change:transform,opacity}
+
+/* ─── Reduced motion ──────────────────────────────────────────────── */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .cj-spine{transition:none;height:100%}
+  .rv,.rv-left,.rv-right,.rv-scale,.wid-stagger,.hero-seq{opacity:1!important;transform:none!important;animation:none!important}
+}
 </style>
 </head>
 
 <body class="antialiased">
+<div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"><div id="scroll-progress-fill"></div></div>
 
 <!-- ======================================================= -->
 <!-- PRELOADER                                                -->
@@ -295,6 +695,8 @@
     <div class="hidden xl:flex items-center gap-5 font-body text-[14px]">
       <a href="#home" class="nav-link" data-nav="home">Home</a>
       <a href="#about" class="nav-link" data-nav="about">About</a>
+      <a href="#career-journey" class="nav-link" data-nav="career-journey">Journey</a>
+      <a href="#what-i-do" class="nav-link" data-nav="what-i-do">What I Do</a>
       <a href="#handbook" class="nav-link" data-nav="handbook">Handbook</a>
       <a href="#skills" class="nav-link" data-nav="skills">Skills</a>
       <a href="#experience" class="nav-link" data-nav="experience">Experience</a>
@@ -307,7 +709,7 @@
     <div class="flex items-center gap-3">
       <!-- Dark / Light mode toggle -->
       <div class="flex items-center gap-2" title="Toggle dark/light mode">
-        <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="#46566B" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="#9AA6B8" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         <button id="themeToggle" aria-label="Toggle dark/light mode"></button>
       </div>
@@ -317,7 +719,7 @@
         Connect
       </a>
       <button id="menuBtn" aria-label="Open menu" class="xl:hidden w-10 h-10 rounded-full border border-navy/15 flex items-center justify-center">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0B2340" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
   </nav>
@@ -334,6 +736,8 @@
   <div class="flex-1 flex flex-col items-start justify-center gap-2 px-8 font-display text-3xl text-white">
     <a href="#home" class="mobile-link py-2.5">Home</a>
     <a href="#about" class="mobile-link py-2.5">About</a>
+    <a href="#career-journey" class="mobile-link py-2.5">Career Journey</a>
+    <a href="#what-i-do" class="mobile-link py-2.5">What I Do</a>
     <a href="#handbook" class="mobile-link py-2.5">Handbook</a>
     <a href="#skills" class="mobile-link py-2.5">Skills</a>
     <a href="#experience" class="mobile-link py-2.5">Experience</a>
@@ -359,12 +763,13 @@
 <!-- ======================================================= -->
 <div class="hidden lg:flex flex-col items-center gap-3 fixed right-6 top-1/2 -translate-y-1/2 z-30">
   <button id="railUp" aria-label="Scroll to previous section" class="w-7 h-7 rounded-full bg-white border border-navy/10 shadow-soft flex items-center justify-center hover:border-mint transition-colors">
-    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#46566B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
   <div class="rail-track flex flex-col items-center gap-3.5 py-3 px-1.5">
     <!-- dots injected/controlled via JS using data-section list below -->
     <button class="rail-dot-wrap relative" data-rail="home" aria-label="Go to Home"><span class="rail-dot"></span><span class="rail-label">Home</span></button>
     <button class="rail-dot-wrap relative" data-rail="about" aria-label="Go to About"><span class="rail-dot"></span><span class="rail-label">About</span></button>
+    <button class="rail-dot-wrap relative" data-rail="career-journey" aria-label="Go to Career Journey"><span class="rail-dot"></span><span class="rail-label">Journey</span></button>
     <button class="rail-dot-wrap relative" data-rail="handbook" aria-label="Go to Handbook"><span class="rail-dot"></span><span class="rail-label">Handbook</span></button>
     <button class="rail-dot-wrap relative" data-rail="skills" aria-label="Go to Skills"><span class="rail-dot"></span><span class="rail-label">Skills</span></button>
     <button class="rail-dot-wrap relative" data-rail="experience" aria-label="Go to Experience"><span class="rail-dot"></span><span class="rail-label">Experience</span></button>
@@ -374,7 +779,7 @@
     <button class="rail-dot-wrap relative" data-rail="contact" aria-label="Go to Contact"><span class="rail-dot"></span><span class="rail-label">Contact</span></button>
   </div>
   <button id="railDown" aria-label="Scroll to next section" class="w-7 h-7 rounded-full bg-white border border-navy/10 shadow-soft flex items-center justify-center hover:border-mint transition-colors">
-    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#46566B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
   </button>
 </div>
 
@@ -383,20 +788,26 @@
 <!-- ======================================================= -->
 <section id="home" class="relative pt-[120px] pb-20 lg:pt-[150px] lg:pb-28 overflow-hidden blueprint-bg">
   <div class="absolute inset-0 bg-gradient-to-b from-paper via-paper to-transparent pointer-events-none"></div>
+  <div class="hero-glow w-[500px] h-[400px] bg-mint/10 -top-20 -right-32 absolute"></div>
+  <div class="hero-glow hero-glow-b w-[380px] h-[320px] bg-navy/6 bottom-0 left-10 absolute"></div>
   <div class="max-w-7xl mx-auto px-5 sm:px-8 relative grid lg:grid-cols-[1.1fr_0.9fr] gap-14 items-center">
 
-    <div data-reveal>
-      <span class="eyebrow">// HR &amp; PEOPLE OPERATIONS · INDIA</span>
-      <h1 class="font-display font-extrabold text-[clamp(2.4rem,5.5vw,4rem)] leading-[1.05] text-navy mt-4">
-        Building the operating&nbsp;system <span class="text-mint-deep">behind great workplaces.</span>
+    <div>
+      <div class="promo-hero-badge mb-5 hero-seq" data-delay="0">
+        <span class="dot"></span>
+        🚀 PROMOTED TO HR &amp; ADMIN LEAD — JUNE 2026
+      </div>
+      <span class="eyebrow">// HR &amp; PEOPLE OPERATIONS · ASHISH POLYMERS</span>
+      <h1 class="font-display font-extrabold text-[clamp(2.4rem,5.5vw,4rem)] leading-[1.05] text-navy mt-4 hero-seq" data-delay="150">
+        Building structured HR operations, people processes and technology-driven solutions.
       </h1>
-      <p class="font-body text-slate text-[17px] leading-relaxed mt-6 max-w-xl">
-        Human Resource &amp; Admin Lead with hands-on ownership of recruitment, onboarding, payroll administration, statutory compliance, HRMS, and employee engagement — turning everyday HR operations into structured, auditable, people-first systems.
+      <p class="font-body text-slate text-[17px] leading-relaxed mt-6 max-w-xl hero-seq" data-delay="280">
+        HR &amp; Admin Lead at Ashish Polymers · HR Operations · Recruitment · Payroll · Compliance · Administration · HR Technology
       </p>
 
-      <div class="flex flex-wrap items-center gap-3.5 mt-9">
+      <div class="flex flex-wrap items-center gap-3.5 mt-9 hero-seq" data-delay="420">
         <a href="https://drive.google.com/file/d/1Oh7HGS8yKck9zfEQKq2ymv8PAliplJLM/view?usp=drivesdk" target="_blank" rel="noopener"
-           class="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold text-sm px-6 py-3.5 rounded-full transition-colors">
+           class="btn-micro inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold text-sm px-6 py-3.5 rounded-full transition-colors">
           Open the Handbook
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
         </a>
@@ -411,15 +822,23 @@
         </a>
       </div>
 
-      <div class="flex flex-wrap gap-2.5 mt-10">
+      <p class="text-[13px] text-slate-soft mt-7 flex items-center gap-2 hero-seq" data-delay="540">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+        Independently built:
+        <a href="https://salary-analyzer.hagarwal193.workers.dev/" target="_blank" rel="noopener"
+           class="font-semibold text-mint-deep hover:underline transition-colors">
+          Salary Analyzer — live HR-Tech app ↗
+        </a>
+      </p>
+      <div class="flex flex-wrap gap-2.5 mt-5">
         <span class="tag-chip">ROLE: HR &amp; ADMIN LEAD</span>
-        <span class="tag-chip">MAY&nbsp;’25 → PRESENT</span>
-        <span class="tag-chip">4 ORGANIZATIONS</span>
-        <span class="tag-chip">12 HR MODULES MAPPED</span>
+        <span class="tag-chip">PROMOTED · JUNE 2026</span>
+        <span class="tag-chip">5 CAREER STAGES</span>
+        <span class="tag-chip">2 PROMOTIONS</span>
       </div>
     </div>
 
-    <div class="relative flex justify-center lg:justify-end" data-reveal>
+    <div class="relative flex justify-center lg:justify-end hero-seq" data-delay="200">
       <div class="relative w-[280px] sm:w-[320px]">
         <span class="frame-deco -top-4 -left-4 w-16 h-16 border-t-2 border-l-2 rounded-tl-2xl"></span>
         <span class="frame-deco -bottom-4 -right-4 w-16 h-16 border-b-2 border-r-2 rounded-br-2xl"></span>
@@ -461,7 +880,7 @@
         An HR generalist who treats operations like infrastructure.
       </h2>
       <p class="font-body text-slate text-[16px] leading-relaxed mt-6">
-        I'm Harsh Agarwal, a Human Resource and Admin Executive based in India, currently driving HR and facilities operations at <a href="https://share.google/PiEdmNppEs7FyAXJ8" target="_blank" rel="noopener" class="text-navy font-semibold hover:text-mint-deep transition-colors">Ashish Polymers</a>. Across four organizations since 2020, I've built my practice around one idea: HR runs better when it's documented, measured, and repeatable — not improvised.
+        I'm Harsh Agarwal — HR &amp; Admin Lead at <a href="https://share.google/PiEdmNppEs7FyAXJ8" target="_blank" rel="noopener" class="text-navy font-semibold hover:text-mint-deep transition-colors">Ashish Polymers</a>, promoted in June 2026. My professional journey began as a Recruitment Trainee at Xtreme Softech (Aug 2023), progressing to HR Executive within the same organisation, before moving to HR Specialist at Aevitas Procurement and then joining Ashish Polymers. Across these roles I've built experience in talent acquisition, recruitment operations, employee onboarding, payroll coordination, attendance &amp; leave management, statutory compliance (PF, ESIC, PT, LWF, TDS), HRMS, employee engagement, HR documentation and administration. I also independently built and launched <strong>Salary Analyzer</strong> — a live HR-Tech web application that combines HR knowledge with technology to help employees, HR professionals and job seekers understand salary structure, CTC breakdowns and statutory deductions. I believe HR runs better when it's documented, measured and repeatable.
       </p>
       <p class="font-body text-slate text-[16px] leading-relaxed mt-4">
         My day-to-day spans end-to-end talent acquisition, structured onboarding, HRMS-driven attendance and payroll, PF/ESIC compliance, and the reporting layer that turns raw workforce data into decisions leadership can act on. I'm equally comfortable closing an offer, reconciling a salary sheet, or building the Excel calculator that makes the next cycle faster.
@@ -493,10 +912,219 @@
           <div><p class="font-semibold text-navy text-[14.5px]">Statutory Compliance</p><p class="text-slate-soft text-[13px] mt-0.5">PF, ESIC, PT, LWF &amp; TDS coordination</p></div>
         </div>
       </div>
+
+      <!-- ── Quick stats row ── -->
+      <div class="grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-navy/8">
+        <div class="text-center">
+          <p class="font-display font-bold text-[1.8rem] text-navy leading-none">
+            <span data-count="3">0</span><span class="text-mint-deep">+</span>
+          </p>
+          <p class="text-slate-soft text-[12.5px] mt-1.5 leading-snug">Years in<br>HR Operations</p>
+        </div>
+        <div class="text-center border-x border-navy/8">
+          <p class="font-display font-bold text-[1.8rem] text-navy leading-none">
+            <span data-count="4">0</span>
+          </p>
+          <p class="text-slate-soft text-[12.5px] mt-1.5 leading-snug">Organizations<br>Worked Across</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display font-bold text-[1.8rem] text-navy leading-none">
+            <span data-count="12">0</span><span class="text-mint-deep">+</span>
+          </p>
+          <p class="text-slate-soft text-[12.5px] mt-1.5 leading-snug">HR Modules<br>Managed</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+
+<!-- ======================================================= -->
+<!-- CAREER JOURNEY                                           -->
+<!-- ======================================================= -->
+<section id="career-journey" class="section-pad bg-paper">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+
+    <div class="max-w-xl" data-reveal>
+      <span class="eyebrow">// 01B — CAREER PROGRESSION</span>
+      <h2 class="font-display font-bold text-[clamp(1.8rem,3.2vw,2.6rem)] text-navy mt-3 leading-tight">
+        Five career stages. Two progressions. One clear direction.
+      </h2>
+    </div>
+
+    <!-- ════ MOBILE: vertical animated timeline ════ -->
+    <div class="relative mt-12 lg:hidden">
+      <div class="cj-line"></div>
+      <div class="space-y-10 pl-14">
+
+        <div class="relative" data-reveal>
+          <div class="absolute -left-14 top-0 cj-dot bg-navy-light text-white">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+          </div>
+          <p class="font-mono text-[11px] text-slate-soft tracking-widest uppercase">Aug 2023</p>
+          <h4 class="font-display font-semibold text-navy text-base mt-0.5">Recruitment Trainee</h4>
+          <p class="text-slate-soft text-[13px] font-medium">Xtreme Softech Pvt. Ltd.</p>
+        </div>
+
+        <div class="relative" data-reveal>
+          <div class="absolute -left-14 top-0 cj-dot bg-navy-light text-white">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div class="inline-flex items-center gap-1.5 bg-navy/5 border border-navy/12 rounded-full px-2.5 py-0.5 text-[10.5px] text-slate font-semibold mb-1">Promoted within</div>
+          <p class="font-mono text-[11px] text-slate-soft tracking-widest uppercase">NOV 2023</p>
+          <h4 class="font-display font-semibold text-navy text-base mt-0.5">HR Executive</h4>
+          <p class="text-slate-soft text-[13px] font-medium">Xtreme Softech Pvt. Ltd.</p>
+        </div>
+
+        <div class="relative" data-reveal>
+          <div class="absolute -left-14 top-0 cj-dot bg-navy-light text-white">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <p class="font-mono text-[11px] text-slate-soft tracking-widest uppercase">Oct 2024</p>
+          <h4 class="font-display font-semibold text-navy text-base mt-0.5">HR Specialist</h4>
+          <p class="text-slate-soft text-[13px] font-medium">Aevitas Procurement Services</p>
+        </div>
+
+        <div class="relative" data-reveal>
+          <div class="absolute -left-14 top-0 cj-dot bg-navy-light text-white">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <p class="font-mono text-[11px] text-slate-soft tracking-widest uppercase">May 2025</p>
+          <h4 class="font-display font-semibold text-navy text-base mt-0.5">HR &amp; Admin Executive</h4>
+          <p class="text-slate-soft text-[13px] font-medium">Ashish Polymers</p>
+        </div>
+
+        <div class="relative" data-reveal>
+          <div class="absolute -left-14 top-0 cj-dot promoted-node bg-mint text-navy-deep promoted">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 mb-1">
+            <p class="font-mono text-[11px] text-mint-deep tracking-widest uppercase">June 2026 — Present</p>
+            <span class="inline-flex items-center gap-1 bg-mint-tint text-mint-deep text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-mint/30">PROMOTED</span>
+          </div>
+          <h4 class="font-display font-bold text-navy text-base mt-0.5">HR &amp; Admin Lead</h4>
+          <p class="text-slate-soft text-[13px] font-medium">Ashish Polymers</p>
+          <p class="text-slate text-[13px] leading-relaxed mt-1.5">Internal promotion — leading HR operations, administrative functions, stakeholder coordination and process improvement.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════ DESKTOP: 9-col grid: card → connector → card → connector → card → connector → card → connector → card ════ -->
+    <div class="hidden lg:grid grid-cols-[1fr_40px_1fr_40px_1fr_40px_1fr_40px_1fr] gap-0 items-start mt-14 relative" id="cj-desktop-grid">
+
+      <!-- Step 1: Recruitment Trainee -->
+      <div class="flex flex-col items-center text-center" data-reveal style="transition-delay:.00s">
+        <div class="cj-dot bg-navy-light text-white ring-4 ring-navy/8 mb-4">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+        </div>
+        <div class="bg-white rounded-2xl border border-navy/6 shadow-card p-4 w-full">
+          <p class="font-mono text-[10px] text-slate-soft tracking-widest uppercase">Aug 2023</p>
+          <h4 class="font-display font-semibold text-navy text-sm mt-1.5 leading-snug">Recruitment Trainee</h4>
+          <p class="text-[12px] text-slate-soft mt-1">Xtreme Softech</p>
+        </div>
+      </div>
+
+      <!-- Connector 1 (same org, progression) -->
+      <div class="flex items-start justify-center pt-[44px]" data-reveal style="transition-delay:.06s">
+        <div class="flex flex-col items-center gap-1">
+          <div class="h-6 w-px bg-navy/15"></div>
+          <div class="text-[9px] text-slate-soft font-mono text-center leading-tight bg-navy/5 px-1.5 py-0.5 rounded">▲</div>
+          <div class="h-6 w-px bg-navy/15"></div>
+        </div>
+      </div>
+
+      <!-- Step 2: HR Executive -->
+      <div class="flex flex-col items-center text-center" data-reveal style="transition-delay:.10s">
+        <div class="mb-1"><span class="inline-flex items-center gap-1 bg-navy/5 border border-navy/12 rounded-full px-2 py-0.5 text-[9.5px] text-slate font-semibold">within org</span></div>
+        <div class="cj-dot bg-navy-light text-white ring-4 ring-navy/8 mb-4">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="bg-white rounded-2xl border border-navy/6 shadow-card p-4 w-full">
+          <p class="font-mono text-[10px] text-slate-soft tracking-widest uppercase">Nov 2023</p>
+          <h4 class="font-display font-semibold text-navy text-sm mt-1.5 leading-snug">HR Executive</h4>
+          <p class="text-[12px] text-slate-soft mt-1">Xtreme Softech</p>
+        </div>
+      </div>
+
+      <!-- Connector 2 -->
+      <div class="flex items-start justify-center pt-[60px]" data-reveal style="transition-delay:.16s">
+        <div class="flex flex-col items-center gap-1">
+          <div class="h-6 w-px bg-navy/15"></div>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#46566B" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <div class="h-6 w-px bg-navy/15"></div>
+        </div>
+      </div>
+
+      <!-- Step 3: HR Specialist -->
+      <div class="flex flex-col items-center text-center" data-reveal style="transition-delay:.20s">
+        <div class="cj-dot bg-navy-light text-white ring-4 ring-navy/8 mb-4" style="margin-top:24px">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="bg-white rounded-2xl border border-navy/6 shadow-card p-4 w-full">
+          <p class="font-mono text-[10px] text-slate-soft tracking-widest uppercase">Oct 2024</p>
+          <h4 class="font-display font-semibold text-navy text-sm mt-1.5 leading-snug">HR Specialist</h4>
+          <p class="text-[12px] text-slate-soft mt-1">Aevitas Procurement</p>
+        </div>
+      </div>
+
+      <!-- Connector 3 -->
+      <div class="flex items-start justify-center pt-[60px]" data-reveal style="transition-delay:.26s">
+        <div class="flex flex-col items-center gap-1">
+          <div class="h-6 w-px bg-navy/15"></div>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#46566B" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <div class="h-6 w-px bg-navy/15"></div>
+        </div>
+      </div>
+
+      <!-- Step 4: HR & Admin Executive -->
+      <div class="flex flex-col items-center text-center" data-reveal style="transition-delay:.30s">
+        <div class="cj-dot bg-navy-light text-white ring-4 ring-navy/8 mb-4" style="margin-top:24px">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="bg-white rounded-2xl border border-navy/6 shadow-card p-4 w-full">
+          <p class="font-mono text-[10px] text-slate-soft tracking-widest uppercase">May 2025</p>
+          <h4 class="font-display font-semibold text-navy text-sm mt-1.5 leading-snug">HR &amp; Admin Executive</h4>
+          <p class="text-[12px] text-slate-soft mt-1">Ashish Polymers</p>
+        </div>
+      </div>
+
+      <!-- Connector 4 — teal, signals promotion -->
+      <div class="flex items-start justify-center pt-[60px]" data-reveal style="transition-delay:.36s">
+        <div class="flex flex-col items-center gap-1">
+          <div class="h-6 w-px bg-mint/40"></div>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0E8C7E" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <div class="h-6 w-px bg-mint/40"></div>
+        </div>
+      </div>
+
+      <!-- Step 5: HR & Admin Lead (PROMOTED) -->
+      <div class="flex flex-col items-center text-center" data-reveal style="transition-delay:.40s">
+        <div class="mb-1"><span class="inline-flex items-center gap-1 bg-mint-tint text-mint-deep text-[9.5px] font-bold px-2 py-0.5 rounded-full border border-mint/30">🚀 PROMOTED</span></div>
+        <div class="cj-dot promoted-node bg-mint text-navy-deep ring-4 ring-mint/20 mb-4 promoted">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+        </div>
+        <div class="bg-white rounded-2xl border-2 border-mint/30 shadow-card p-4 w-full relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-14 h-14 bg-mint-tint rounded-bl-[45px] -z-0 opacity-60"></div>
+          <div class="relative z-10">
+            <p class="font-mono text-[10px] text-mint-deep tracking-widest uppercase">June 2026</p>
+            <h4 class="font-display font-bold text-navy text-sm mt-1.5 leading-snug">HR &amp; Admin Lead</h4>
+            <p class="text-[12px] text-slate-soft mt-1">Ashish Polymers</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Summary tagline -->
+    <div class="mt-12 lg:mt-16 text-center" data-reveal>
+      <p class="font-mono text-[12px] text-slate-soft tracking-widest">
+        TRAINEE &nbsp;→&nbsp; HR EXECUTIVE &nbsp;→&nbsp; HR SPECIALIST &nbsp;→&nbsp; HR &amp; ADMIN EXEC &nbsp;→&nbsp; <strong class="text-mint-deep">🚀 HR &amp; ADMIN LEAD</strong>
+      </p>
+    </div>
+
+  </div>
+</section>
 <!-- ======================================================= -->
 <!-- HANDBOOK SHOWCASE                                        -->
 <!-- ======================================================= -->
@@ -516,7 +1144,7 @@
 
       <!-- 3D Book mockup -->
       <div class="book-stage flex justify-center" data-reveal>
-        <a href="https://drive.google.com/file/d/1Oh7HGS8yKck9zfEQKq2ymv8PAliplJLM/view?usp=drivesdk" target="_blank" rel="noopener" aria-label="Open the Complete HR Functions & Responsibilities Handbook PDF" class="book block">
+        <div id="handbook-tilt" class="handbook-tilt-wrap select-none"><div class="handbook-tilt-inner book-float"><a href="https://drive.google.com/file/d/1Oh7HGS8yKck9zfEQKq2ymv8PAliplJLM/view?usp=drivesdk" target="_blank" rel="noopener" aria-label="Open the Complete HR Functions & Responsibilities Handbook PDF" class="book block">
           <div class="book-pages"></div>
           <div class="book-spine"></div>
           <div class="book-cover">
@@ -530,7 +1158,7 @@
             </div>
             <div class="font-mono text-[9.5px] text-white/55 tracking-wide">PREPARED BY — HARSH AGARWAL</div>
           </div>
-        </a>
+        </a></div></div>
       </div>
 
       <div data-reveal>
@@ -682,10 +1310,97 @@
 <!-- ======================================================= -->
 <!-- SKILLS                                                   -->
 <!-- ======================================================= -->
+
+<!-- ======================================================= -->
+<!-- WHAT I DO                                                -->
+<!-- ======================================================= -->
+<section id="what-i-do" class="section-pad bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-xl mx-auto text-center" data-reveal>
+      <span class="eyebrow">// 02B — CORE CAPABILITIES</span>
+      <h2 class="font-display font-bold text-[clamp(1.8rem,3.2vw,2.6rem)] text-navy mt-3 leading-tight">What I Do</h2>
+      <p class="text-slate text-[15px] mt-3">HR &amp; people operations across the full employee lifecycle — from talent acquisition to compliance and HR technology.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+
+      <div class="wid-card wid-stagger bg-paper border border-navy/5 shadow-card" data-delay="0" data-reveal style="transition-delay:.04s">
+        <div class="wid-icon bg-mint-tint text-mint-deep">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-navy text-base">HR Operations</h3>
+        <p class="text-slate text-[13.5px] leading-relaxed mt-2">Managing structured HR processes across the full employee lifecycle — onboarding to exit.</p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          <span class="tag-chip text-[11px]">HRMS</span><span class="tag-chip text-[11px]">Attendance</span><span class="tag-chip text-[11px]">Leave</span><span class="tag-chip text-[11px]">HR MIS</span>
+        </div>
+      </div>
+
+      <div class="wid-card wid-stagger bg-paper border border-navy/5 shadow-card" data-delay="80" data-reveal style="transition-delay:.08s">
+        <div class="wid-icon bg-navy/5 text-navy">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-navy text-base">Talent Acquisition</h3>
+        <p class="text-slate text-[13.5px] leading-relaxed mt-2">End-to-end recruitment — sourcing, screening, interview coordination and onboarding new hires.</p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          <span class="tag-chip text-[11px]">Sourcing</span><span class="tag-chip text-[11px]">Interviews</span><span class="tag-chip text-[11px]">Onboarding</span><span class="tag-chip text-[11px]">Job Portals</span>
+        </div>
+      </div>
+
+      <div class="wid-card wid-stagger bg-paper border border-navy/5 shadow-card" data-delay="160" data-reveal style="transition-delay:.12s">
+        <div class="wid-icon bg-mint-tint text-mint-deep">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-navy text-base">Payroll &amp; Compliance</h3>
+        <p class="text-slate text-[13.5px] leading-relaxed mt-2">Supporting payroll processes and statutory areas including PF, ESIC, PT, LWF and TDS coordination.</p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          <span class="tag-chip text-[11px]">PF</span><span class="tag-chip text-[11px]">ESIC</span><span class="tag-chip text-[11px]">PT</span><span class="tag-chip text-[11px]">TDS</span><span class="tag-chip text-[11px]">LWF</span>
+        </div>
+      </div>
+
+      <div class="wid-card wid-stagger bg-paper border border-navy/5 shadow-card" data-delay="240" data-reveal style="transition-delay:.16s">
+        <div class="wid-icon bg-navy/5 text-navy">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-navy text-base">Administration</h3>
+        <p class="text-slate text-[13.5px] leading-relaxed mt-2">Managing workplace administration, HR documentation, office operations and cross-functional coordination.</p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          <span class="tag-chip text-[11px]">Documentation</span><span class="tag-chip text-[11px]">Office Ops</span><span class="tag-chip text-[11px]">Coordination</span>
+        </div>
+      </div>
+
+      <div class="wid-card wid-stagger bg-paper border border-navy/5 shadow-card" data-delay="320" data-reveal style="transition-delay:.20s">
+        <div class="wid-icon bg-mint-tint text-mint-deep">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-navy text-base">Employee Relations</h3>
+        <p class="text-slate text-[13.5px] leading-relaxed mt-2">Supporting employees, resolving workplace concerns and maintaining effective HR communication.</p>
+        <div class="flex flex-wrap gap-1.5 mt-4">
+          <span class="tag-chip text-[11px]">Engagement</span><span class="tag-chip text-[11px]">Conflict Resolution</span><span class="tag-chip text-[11px]">Communication</span>
+        </div>
+      </div>
+
+      <div class="wid-card wid-stagger bg-white rounded-2xl border-2 border-mint/30 shadow-card relative overflow-hidden" data-delay="400" data-reveal style="transition-delay:.24s">
+        <div class="absolute top-0 right-0 w-16 h-16 bg-mint-tint rounded-bl-[50px] -z-0 opacity-70"></div>
+        <div class="relative z-10">
+          <div class="wid-icon bg-mint-tint text-mint-deep">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-navy text-base">HR Technology</h3>
+          <p class="text-slate text-[13.5px] leading-relaxed mt-2">Building practical HR technology solutions — combining HR knowledge with automation to simplify salary and compliance processes.</p>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="tag-chip text-[11px] border-mint/40 text-mint-deep">Salary Analyzer</span><span class="tag-chip text-[11px]">Excel Tools</span><span class="tag-chip text-[11px]">Automation</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="skills" class="section-pad bg-paper">
   <div class="max-w-7xl mx-auto px-5 sm:px-8">
     <div class="max-w-xl" data-reveal>
-      <span class="eyebrow">// 03 — TOOLKIT</span>
+      <span class="eyebrow">// 03 — SKILLS &amp; TOOLKIT</span>
       <h2 class="font-display font-bold text-[clamp(1.8rem,3.2vw,2.6rem)] text-navy mt-3 leading-tight">Core competencies &amp; tooling</h2>
       <p class="font-body text-slate text-[15.5px] mt-4 leading-relaxed">The HR craft on one side, the systems that run it on the other.</p>
     </div>
@@ -726,6 +1441,73 @@
           <div class="tool-chip"><span class="tool-mono bg-navy">X</span><div><p class="font-semibold text-navy text-[13.5px]">Advanced Excel</p><p class="text-slate-soft text-[11.5px]">Pivot tables &amp; calculators</p></div></div>
         </div>
       </div>
+
+      <!-- HR-Tech & Digital Projects -->
+      
+      <!-- ── Animated skill proficiency bars ── -->
+      <div class="lg:col-span-2 mt-8" data-reveal>
+        <h3 class="font-display font-semibold text-navy text-lg mb-5 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-mint"></span> Proficiency Overview
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4">
+          <div class="skill-row">
+            <div class="flex justify-between text-sm mb-1.5"><span class="font-medium text-navy">HR Operations</span><span class="text-slate-soft">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="flex justify-between text-sm mb-1.5"><span class="font-medium text-navy">Talent Acquisition</span><span class="text-slate-soft">88%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="flex justify-between text-sm mb-1.5"><span class="font-medium text-navy">Payroll Coordination</span><span class="text-slate-soft">82%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="flex justify-between text-sm mb-1.5"><span class="font-medium text-navy">Statutory Compliance</span><span class="text-slate-soft">78%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="flex justify-between text-sm mb-1.5"><span class="font-medium text-navy">HRMS &amp; Tools</span><span class="text-slate-soft">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="flex justify-between text-sm mb-1.5"><span class="font-medium text-navy">Employee Engagement</span><span class="text-slate-soft">84%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="84%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="flex justify-between text-sm mb-1.5"><span class="font-medium text-navy">Administration</span><span class="text-slate-soft">86%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="86%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="flex justify-between text-sm mb-1.5"><span class="font-medium text-navy">HR Documentation</span><span class="text-slate-soft">87%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="87%"></div></div>
+          </div>
+        </div>
+      </div>
+
+<div data-reveal class="lg:col-span-2 mt-2">
+        <h3 class="font-display font-semibold text-navy text-lg mb-4 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-mint"></span> HR-Tech &amp; Digital Projects
+        </h3>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div class="lift bg-white rounded-xl border border-navy/5 p-4 shadow-card">
+            <p class="font-semibold text-navy text-[14px]">Salary Analyzer</p>
+            <p class="text-slate-soft text-[12.5px] mt-1">Live HR-Tech web app · CTC &amp; deductions</p>
+          </div>
+          <div class="lift bg-white rounded-xl border border-navy/5 p-4 shadow-card">
+            <p class="font-semibold text-navy text-[14px]">Excel Automation</p>
+            <p class="text-slate-soft text-[12.5px] mt-1">Salary &amp; bonus calculators</p>
+          </div>
+          <div class="lift bg-white rounded-xl border border-navy/5 p-4 shadow-card">
+            <p class="font-semibold text-navy text-[14px]">CRM Implementation</p>
+            <p class="text-slate-soft text-[12.5px] mt-1">Kylas CRM · end-to-end rollout</p>
+          </div>
+          <div class="lift bg-white rounded-xl border border-navy/5 p-4 shadow-card">
+            <p class="font-semibold text-navy text-[14px]">WordPress</p>
+            <p class="text-slate-soft text-[12.5px] mt-1">Corporate site development</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -738,57 +1520,178 @@
     <div class="max-w-xl" data-reveal>
       <span class="eyebrow">// 04 — TIMELINE</span>
       <h2 class="font-display font-bold text-[clamp(1.8rem,3.2vw,2.6rem)] text-navy mt-3 leading-tight">Professional experience</h2>
+      <p class="text-slate text-[15px] mt-2">Recruitment Trainee → HR Executive → HR Specialist → HR &amp; Admin Executive → <strong class="text-mint-deep">HR &amp; Admin Lead</strong></p>
     </div>
 
     <div class="relative mt-14 pl-8 sm:pl-12">
-      <div class="absolute left-[7px] sm:left-[11px] top-2 bottom-2 w-px bg-navy/10"></div>
+      <div class="timeline-spine absolute left-[7px] sm:left-[11px] top-2 bottom-2 w-px"></div>
 
-      <div class="relative pb-12" data-reveal>
-        <span class="absolute -left-8 sm:-left-12 top-1.5 w-3.5 h-3.5 rounded-full bg-mint ring-4 ring-mint-tint"></span>
-        <p class="font-mono text-[11.5px] text-mint-deep tracking-wide">MAY 2025 — PRESENT</p>
-        <h3 class="font-display font-semibold text-navy text-xl mt-1.5">Human Resource and Admin Executive</h3>
-        <a href="https://share.google/PiEdmNppEs7FyAXJ8" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-slate-soft hover:text-mint-deep text-[14px] font-medium transition-colors group">Ashish Polymers<svg class="opacity-0 group-hover:opacity-100 transition-opacity" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-        <ul class="mt-3 space-y-2 text-slate text-[14.5px] leading-relaxed max-w-2xl">
-          <li>• End-to-end recruitment and onboarding — sourcing, screening, interview coordination, offer rollout, HRMS training and induction.</li>
-          <li>• HRMS attendance audits and leave management, with reports escalated for repeated non-compliance.</li>
-          <li>• Salary sheet preparation and PF/ESIC administration alongside the accounts team.</li>
-          <li>• Drives engagement initiatives — birthdays, recognition programs, team-building.</li>
-        </ul>
+      <!-- ══ CURRENT: HR & Admin Lead ══ -->
+      <div class="relative pb-10" data-reveal style="transition-delay:.05s">
+        <span class="absolute -left-8 sm:-left-12 top-1.5 w-3.5 h-3.5 rounded-full bg-mint ring-4 ring-mint/20"></span>
+        <div class="flex flex-wrap items-center gap-2 mb-1">
+          <p class="font-mono text-[11.5px] text-mint-deep tracking-wide">JUNE 2026 — PRESENT</p>
+          <span class="inline-flex items-center gap-1 bg-mint-tint text-mint-deep text-[11px] font-semibold px-2.5 py-0.5 rounded-full border border-mint/30">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>CURRENT ROLE
+          </span>
+        </div>
+        <h3 class="font-display font-semibold text-navy text-xl mt-1">HR &amp; Admin Lead</h3>
+        <p class="text-slate-soft text-[14px] font-medium mt-0.5 flex items-center gap-1.5">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ashish Polymers
+        </p>
+        <div class="exp-body mt-4 max-w-2xl">
+          <ul class="space-y-1.5" id="exp-body-lead">
+            <li class="exp-bullet">Lead day-to-day HR operations and administration across the organisation.</li>
+            <li class="exp-bullet">Manage recruitment, workforce planning and end-to-end talent acquisition.</li>
+            <li class="exp-bullet">Oversee employee onboarding, documentation and full lifecycle management.</li>
+            <li class="exp-bullet exp-extra hidden">Manage attendance, leave and HRMS processes; generate MIS and HR reports.</li>
+            <li class="exp-bullet exp-extra hidden">Coordinate payroll inputs, salary-related activities and statutory compliance — PF, ESIC, PT, LWF and TDS coordination.</li>
+            <li class="exp-bullet exp-extra hidden">Drive employee engagement, employee relations and workplace administration.</li>
+            <li class="exp-bullet exp-extra hidden">Support HR policy implementation, process improvements and coordination with management.</li>
+          </ul>
+          <button onclick="toggleExp('lead')" class="exp-toggle mt-3 text-[13px] text-mint-deep font-semibold flex items-center gap-1.5 hover:gap-2.5 transition-all">
+            <span id="exp-toggle-label-lead">View all responsibilities</span>
+            <svg id="exp-toggle-icon-lead" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="tag-chip text-[11px]">HR Operations</span><span class="tag-chip text-[11px]">Administration</span><span class="tag-chip text-[11px]">Recruitment</span><span class="tag-chip text-[11px]">Payroll</span><span class="tag-chip text-[11px]">Compliance</span><span class="tag-chip text-[11px]">HRMS</span><span class="tag-chip text-[11px]">MIS</span><span class="tag-chip text-[11px]">Employee Engagement</span>
+          </div>
+        </div>
       </div>
 
-      <div class="relative pb-12" data-reveal>
+      <!-- ══ Internal Promotion Banner ══ -->
+      <div class="relative pb-5" data-reveal style="transition-delay:.12s">
+        <div class="promo-banner ml-0 inline-flex items-center gap-2 bg-mint-tint border border-mint/25 rounded-lg px-4 py-2.5 text-[13px] text-mint-deep font-semibold">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+          Internal Promotion at Ashish Polymers · June 2026
+        </div>
+      </div>
+
+      <!-- ══ HR & Admin Executive ══ -->
+      <div class="relative pb-10" data-reveal style="transition-delay:.18s">
+        <span class="absolute -left-8 sm:-left-12 top-1.5 w-3.5 h-3.5 rounded-full bg-navy-light ring-4 ring-navy/10"></span>
+        <p class="font-mono text-[11.5px] text-slate-soft tracking-wide">MAY 2025 — MAY 2026</p>
+        <h3 class="font-display font-semibold text-navy text-xl mt-1.5">HR &amp; Admin Executive</h3>
+        <p class="text-slate-soft text-[14px] font-medium mt-0.5 flex items-center gap-1.5">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ashish Polymers
+        </p>
+        <div class="exp-body mt-4 max-w-2xl">
+          <ul class="space-y-1.5" id="exp-body-exec">
+            <li class="exp-bullet">End-to-end recruitment — sourcing, screening, interview coordination, offer rollout and joining formalities.</li>
+            <li class="exp-bullet">Employee onboarding, documentation and HR records management.</li>
+            <li class="exp-bullet">Attendance and leave management via HRMS; reports escalated for non-compliance.</li>
+            <li class="exp-bullet exp-extra hidden">Payroll inputs, salary coordination and PF / ESIC / PT / LWF administration.</li>
+            <li class="exp-bullet exp-extra hidden">Employee engagement activities — birthday celebrations, recognition programmes and team-building.</li>
+            <li class="exp-bullet exp-extra hidden">HR MIS and reporting; general administration and employee support.</li>
+          </ul>
+          <button onclick="toggleExp('exec')" class="exp-toggle mt-3 text-[13px] text-mint-deep font-semibold flex items-center gap-1.5 hover:gap-2.5 transition-all">
+            <span id="exp-toggle-label-exec">View all responsibilities</span>
+            <svg id="exp-toggle-icon-exec" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="tag-chip text-[11px]">Recruitment</span><span class="tag-chip text-[11px]">HR Operations</span><span class="tag-chip text-[11px]">Payroll</span><span class="tag-chip text-[11px]">HRMS</span><span class="tag-chip text-[11px]">Compliance</span><span class="tag-chip text-[11px]">Administration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ Aevitas ══ -->
+      <div class="relative pb-10" data-reveal style="transition-delay:.24s">
         <span class="absolute -left-8 sm:-left-12 top-1.5 w-3.5 h-3.5 rounded-full bg-navy-light ring-4 ring-navy/10"></span>
         <p class="font-mono text-[11.5px] text-slate-soft tracking-wide">OCT 2024 — MAY 2025</p>
-        <h3 class="font-display font-semibold text-navy text-xl mt-1.5">Human Resource Specialist</h3>
-        <a href="https://share.google/gPDTBnrJYUW4VpHX7" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-slate-soft hover:text-mint-deep text-[14px] font-medium transition-colors group">Aevitas Procurement Services Pvt. Ltd.<svg class="opacity-0 group-hover:opacity-100 transition-opacity" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-        <ul class="mt-3 space-y-2 text-slate text-[14.5px] leading-relaxed max-w-2xl">
-          <li>• Led end-to-end recruitment and on-boarding, integrating new hires smoothly.</li>
-          <li>• Administered payroll with accurate calculation and timely disbursement.</li>
-          <li>• Provided HR support on policies, benefits and conflict resolution; coordinated training programs.</li>
-        </ul>
+        <h3 class="font-display font-semibold text-navy text-xl mt-1.5">HR Specialist</h3>
+        <p class="text-slate-soft text-[14px] font-medium mt-0.5 flex items-center gap-1.5">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Aevitas Procurement Services Pvt. Ltd.
+        </p>
+        <div class="exp-body mt-4 max-w-2xl">
+          <ul class="space-y-1.5" id="exp-body-aevitas">
+            <li class="exp-bullet">Managed end-to-end recruitment — sourcing, screening, interview coordination and onboarding.</li>
+            <li class="exp-bullet">Payroll administration — accurate calculation and timely disbursement of salaries.</li>
+            <li class="exp-bullet">HR support on policies, benefits and conflict resolution; training coordination.</li>
+            <li class="exp-bullet exp-extra hidden">Maintained accurate employee records with confidentiality and data protection compliance.</li>
+            <li class="exp-bullet exp-extra hidden">HR documentation, employee relations and management coordination.</li>
+            <li class="exp-bullet exp-extra hidden">Led end-to-end CRM implementation (Kylas CRM) in coordination with the CEO — setup, configuration, integration and team training.</li>
+          </ul>
+          <button onclick="toggleExp('aevitas')" class="exp-toggle mt-3 text-[13px] text-mint-deep font-semibold flex items-center gap-1.5 hover:gap-2.5 transition-all">
+            <span id="exp-toggle-label-aevitas">View all responsibilities</span>
+            <svg id="exp-toggle-icon-aevitas" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="tag-chip text-[11px]">Talent Acquisition</span><span class="tag-chip text-[11px]">HR Operations</span><span class="tag-chip text-[11px]">Payroll</span><span class="tag-chip text-[11px]">Employee Relations</span><span class="tag-chip text-[11px]">HR Reporting</span>
+          </div>
+        </div>
       </div>
 
-      <div class="relative pb-12" data-reveal>
+      <!-- ══ Xtreme Softech: Internal progression banner ══ -->
+      <div class="relative pb-4" data-reveal style="transition-delay:.30s">
+        <div class="ml-0 inline-flex items-center gap-2 bg-navy/5 border border-navy/15 rounded-lg px-4 py-2 text-[13px] text-slate font-semibold">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+          Internal Progression at Xtreme Softech Pvt. Ltd.
+        </div>
+      </div>
+
+      <!-- ══ Xtreme Softech: HR Executive ══ -->
+      <div class="relative pb-10" data-reveal style="transition-delay:.34s">
         <span class="absolute -left-8 sm:-left-12 top-1.5 w-3.5 h-3.5 rounded-full bg-navy-light ring-4 ring-navy/10"></span>
-        <p class="font-mono text-[11.5px] text-slate-soft tracking-wide">AUG 2023 — OCT 2024</p>
-        <h3 class="font-display font-semibold text-navy text-xl mt-1.5">Human Resource Executive</h3>
-        <a href="https://share.google/giQZ7GNVsfyEtvTgh" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-slate-soft hover:text-mint-deep text-[14px] font-medium transition-colors group">Xtreme Softech Pvt. Ltd.<svg class="opacity-0 group-hover:opacity-100 transition-opacity" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-        <ul class="mt-3 space-y-2 text-slate text-[14.5px] leading-relaxed max-w-2xl">
-          <li>• Ran university placement drives and full-cycle recruitment from job portals.</li>
-          <li>• Drafted JDs, offer/appointment letters, and experience/relieving letters.</li>
-          <li>• Reported directly to CEO-level leadership on hiring strategy and progress.</li>
-        </ul>
+        <p class="font-mono text-[11.5px] text-slate-soft tracking-wide">NOV 2023 — OCT 2024</p>
+        <h3 class="font-display font-semibold text-navy text-xl mt-1.5">HR Executive</h3>
+        <p class="text-slate-soft text-[14px] font-medium mt-0.5 flex items-center gap-1.5">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Xtreme Softech Pvt. Ltd.
+        </p>
+        <div class="exp-body mt-4 max-w-2xl">
+          <ul class="space-y-1.5" id="exp-body-xt-exec">
+            <li class="exp-bullet">Managed full-cycle recruitment — sourcing, screening, interview coordination and offer letters.</li>
+            <li class="exp-bullet">Ran university and placement drives; job portal recruitment across multiple platforms.</li>
+            <li class="exp-bullet">Prepared job descriptions, appointment letters, experience and relieving letters.</li>
+            <li class="exp-bullet exp-extra hidden">Joining formalities, onboarding coordination and new-hire induction.</li>
+            <li class="exp-bullet exp-extra hidden">Recruitment MIS and reporting to senior management and CEO.</li>
+            <li class="exp-bullet exp-extra hidden">Developed and launched the company external website (WordPress) and internal knowledge hub (Google Slides).</li>
+          </ul>
+          <button onclick="toggleExp('xt-exec')" class="exp-toggle mt-3 text-[13px] text-mint-deep font-semibold flex items-center gap-1.5 hover:gap-2.5 transition-all">
+            <span id="exp-toggle-label-xt-exec">View all responsibilities</span>
+            <svg id="exp-toggle-icon-xt-exec" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="tag-chip text-[11px]">Recruitment</span><span class="tag-chip text-[11px]">Talent Acquisition</span><span class="tag-chip text-[11px]">Job Portals</span><span class="tag-chip text-[11px]">Onboarding</span><span class="tag-chip text-[11px]">HR Documentation</span>
+          </div>
+        </div>
       </div>
 
-      <div class="relative" data-reveal>
+      <!-- ══ Xtreme Softech: Recruitment Trainee ══ -->
+      <div class="relative pb-10" data-reveal style="transition-delay:.38s">
+        <span class="absolute -left-8 sm:-left-12 top-1.5 w-3.5 h-3.5 rounded-full bg-navy-light ring-4 ring-navy/10"></span>
+        <p class="font-mono text-[11.5px] text-slate-soft tracking-wide">AUG 2023 — NOV 2023</p>
+        <h3 class="font-display font-semibold text-navy text-xl mt-1.5">Recruitment Trainee</h3>
+        <p class="text-slate-soft text-[14px] font-medium mt-0.5 flex items-center gap-1.5">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Xtreme Softech Pvt. Ltd.
+        </p>
+        <div class="exp-body mt-4 max-w-2xl">
+          <ul class="space-y-1.5">
+            <li class="exp-bullet">Assisted in candidate sourcing through job portals and professional networks.</li>
+            <li class="exp-bullet">Resume screening, shortlisting and interview scheduling.</li>
+            <li class="exp-bullet">Maintained candidate databases and recruitment records.</li>
+            <li class="exp-bullet">Candidate follow-ups and recruiter support in daily hiring activities.</li>
+          </ul>
+          <div class="flex flex-wrap gap-1.5 mt-4">
+            <span class="tag-chip text-[11px]">Sourcing</span><span class="tag-chip text-[11px]">Screening</span><span class="tag-chip text-[11px]">Job Portals</span><span class="tag-chip text-[11px]">Interview Coordination</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ HR Intern ══ -->
+      <div class="relative" data-reveal style="transition-delay:.42s">
         <span class="absolute -left-8 sm:-left-12 top-1.5 w-3.5 h-3.5 rounded-full bg-navy-light ring-4 ring-navy/10"></span>
         <p class="font-mono text-[11.5px] text-slate-soft tracking-wide">AUG 2020 — MAY 2021</p>
         <h3 class="font-display font-semibold text-navy text-xl mt-1.5">Human Resource Intern</h3>
-        <p class="text-slate-soft text-[14px] font-medium">Aashman Foundation</p>
-        <ul class="mt-3 space-y-2 text-slate text-[14.5px] leading-relaxed max-w-2xl">
-          <li>• Coordinated social media strategy across a 60-intern cohort.</li>
-          <li>• Led a team of 10 group supervisors overseeing the full recruitment process.</li>
-          <li>• Shortlisted 40 candidates, 32 of whom were offered positions.</li>
+        <p class="text-slate-soft text-[14px] font-medium mt-0.5">Aashman Foundation</p>
+        <ul class="mt-3 space-y-1.5 max-w-2xl">
+          <li class="exp-bullet">Coordinated social media strategy across a 60-intern cohort; guided interns on corrective performance.</li>
+          <li class="exp-bullet">Led a team of 10 group supervisors overseeing the full recruitment process.</li>
+          <li class="exp-bullet">Shortlisted 40 candidates — 32 were offered positions (80% offer-conversion rate).</li>
         </ul>
       </div>
     </div>
@@ -801,30 +1704,71 @@
 <section id="projects" class="section-pad bg-paper">
   <div class="max-w-7xl mx-auto px-5 sm:px-8">
     <div class="max-w-xl" data-reveal>
-      <span class="eyebrow">// 05 — OPERATIONS PROJECTS</span>
-      <h2 class="font-display font-bold text-[clamp(1.8rem,3.2vw,2.6rem)] text-navy mt-3 leading-tight">Things I've built on the job</h2>
+      <span class="eyebrow">// 05 — PROJECTS &amp; HR-TECH</span>
+      <h2 class="font-display font-bold text-[clamp(1.8rem,3.2vw,2.6rem)] text-navy mt-3 leading-tight">Built on the job — and independently.</h2>
+      <p class="text-slate text-[15px] mt-3">From Excel tools that eliminate manual payroll errors to an independent HR-Tech application — each project solves a real HR problem.</p>
     </div>
 
-    <div class="grid sm:grid-cols-2 gap-5 mt-12">
-      <div class="lift bg-white rounded-2xl border border-navy/5 shadow-card p-6" data-reveal>
-        <span class="tag-chip">ASHISH POLYMERS</span>
-        <h3 class="font-display font-semibold text-navy text-lg mt-3.5">Retention Bonus &amp; Salary Calculators</h3>
-        <p class="text-slate text-[14px] leading-relaxed mt-2">Built two automated Excel engines: a Retention Bonus Calculator driven by tenure and performance, and a Salary Calculator covering deductions, allowances and statutory contributions — cutting manual calculation errors.</p>
+    <div class="mt-12 space-y-5">
+
+      <!-- ★ Salary Analyzer — Featured ★ -->
+      <div class="lift salary-analyzer-card proj-lift salary-lift bg-white rounded-2xl border-2 border-mint/30 shadow-card p-6 sm:p-8 relative overflow-hidden" data-reveal>
+        <div class="absolute top-0 right-0 w-32 h-32 bg-mint-tint rounded-bl-[80px] -z-0"></div>
+        <div class="relative z-10">
+          <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="tag-chip border-mint/40 text-mint-deep bg-mint-tint">INDEPENDENT PROJECT</span>
+              <span class="inline-flex items-center gap-1 bg-mint text-navy-deep text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+                <span class="w-1.5 h-1.5 rounded-full bg-navy-deep animate-pulse inline-block"></span>
+                LIVE
+              </span>
+            </div>
+            <span class="text-[11.5px] font-mono text-slate-soft">HR-TECH · WEB APPLICATION</span>
+          </div>
+          <h3 class="font-display font-bold text-navy text-xl sm:text-2xl mt-1">Salary Analyzer</h3>
+          <p class="text-slate text-[14.5px] leading-relaxed mt-3 max-w-2xl">
+            An independently designed and launched HR-focused salary analysis platform that helps employees, HR professionals and job seekers understand CTC structure, estimated in-hand salary and applicable statutory deductions.
+          </p>
+          <div class="flex flex-wrap gap-1.5 sm:gap-2 mt-5">
+            <span class="tag-chip text-[11.5px]">CTC Breakdown</span>
+            <span class="tag-chip text-[11.5px]">In-Hand Salary Estimation</span>
+            <span class="tag-chip text-[11.5px]">PF &amp; ESI Calculations</span>
+            <span class="tag-chip text-[11.5px]">Professional Tax</span>
+            <span class="tag-chip text-[11.5px]">Labour Welfare Fund</span>
+            <span class="tag-chip text-[11.5px]">TDS Analysis</span>
+            <span class="tag-chip text-[11.5px]">Labour Code Mode</span>
+          </div>
+          <div class="flex flex-wrap gap-3 mt-6">
+            <a href="https://salary-analyzer.hagarwal193.workers.dev/" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 bg-mint hover:bg-mint-light text-navy-deep font-semibold text-sm px-5 py-3 rounded-full transition-colors">
+              Explore Live Application
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="lift bg-white rounded-2xl border border-navy/5 shadow-card p-6" data-reveal>
-        <span class="tag-chip">AEVITAS PROCUREMENT</span>
-        <h3 class="font-display font-semibold text-navy text-lg mt-3.5">CRM Implementation</h3>
-        <p class="text-slate text-[14px] leading-relaxed mt-2">Led full-lifecycle CRM setup, configuration and rollout in direct coordination with the executive office — from system structure to basic team training.</p>
-      </div>
-      <div class="lift bg-white rounded-2xl border border-navy/5 shadow-card p-6" data-reveal>
-        <span class="tag-chip">XTREME SOFTECH</span>
-        <h3 class="font-display font-semibold text-navy text-lg mt-3.5">Public Website Development</h3>
-        <p class="text-slate text-[14px] leading-relaxed mt-2">Developed and launched a live, customer-facing, responsive website using WordPress, with a focus on clean UX and reliable functionality.</p>
-      </div>
-      <div class="lift bg-white rounded-2xl border border-navy/5 shadow-card p-6" data-reveal>
-        <span class="tag-chip">XTREME SOFTECH</span>
-        <h3 class="font-display font-semibold text-navy text-lg mt-3.5">Internal Knowledge Hub</h3>
-        <p class="text-slate text-[14px] leading-relaxed mt-2">Built an interactive internal policy hub using Google Slides, giving employees fast access to company policies and reducing repetitive clarification queries.</p>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div class="lift proj-lift bg-white rounded-2xl border border-navy/5 shadow-card p-6" data-reveal>
+          <span class="tag-chip">ASHISH POLYMERS</span>
+          <h3 class="font-display font-semibold text-navy text-lg mt-3.5">Retention Bonus &amp; Salary Calculators</h3>
+          <p class="text-slate text-[14px] leading-relaxed mt-2">Built two automated Excel engines: a Retention Bonus Calculator driven by tenure and performance, and a Salary Calculator covering deductions, allowances and statutory contributions — cutting manual calculation errors.</p>
+        </div>
+        <div class="lift proj-lift bg-white rounded-2xl border border-navy/5 shadow-card p-6" data-reveal>
+          <span class="tag-chip">AEVITAS PROCUREMENT</span>
+          <h3 class="font-display font-semibold text-navy text-lg mt-3.5">CRM Implementation</h3>
+          <p class="text-slate text-[14px] leading-relaxed mt-2">Led full-lifecycle CRM setup (Kylas CRM), configuration and rollout in direct coordination with the executive office — from system structure to team training, improving productivity and adoption.</p>
+        </div>
+        <div class="lift proj-lift bg-white rounded-2xl border border-navy/5 shadow-card p-6" data-reveal>
+          <span class="tag-chip">XTREME SOFTECH</span>
+          <h3 class="font-display font-semibold text-navy text-lg mt-3.5">Public Website Development</h3>
+          <p class="text-slate text-[14px] leading-relaxed mt-2">Developed and launched a live, customer-facing, responsive website using WordPress, with a focus on clean UX and reliable functionality.</p>
+        </div>
+        <div class="lift proj-lift bg-white rounded-2xl border border-navy/5 shadow-card p-6" data-reveal>
+          <span class="tag-chip">XTREME SOFTECH</span>
+          <h3 class="font-display font-semibold text-navy text-lg mt-3.5">Internal Knowledge Hub</h3>
+          <p class="text-slate text-[14px] leading-relaxed mt-2">Built an interactive internal policy hub using Google Slides, giving employees fast access to company policies and reducing repetitive clarification queries.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -892,24 +1836,24 @@
 
     <!-- decorative ops snapshot panel to balance layout -->
     <div class="bg-navy rounded-3xl p-9 relative overflow-hidden blueprint-bg-dark" data-reveal>
-      <p class="font-mono text-mint-light text-[11px] tracking-wide">// CAREER LOG</p>
-      <h3 class="font-display font-semibold text-white text-xl mt-2">Six years across recruitment, ops &amp; admin.</h3>
+      <p class="font-mono text-mint-light text-[11px] tracking-wide">// CAREER SNAPSHOT</p>
+      <h3 class="font-display font-semibold text-white text-xl mt-2">A clear, progressive HR journey since August 2023.</h3>
       <div class="grid grid-cols-2 gap-4 mt-8">
         <div class="bg-white/5 border border-white/10 rounded-xl p-5">
-          <p class="font-display font-extrabold text-mint-light text-3xl">4</p>
-          <p class="text-white/60 text-[12.5px] mt-1">Organizations served</p>
+          <p class="font-display font-extrabold text-mint-light text-3xl" id="snap-years">0</p>
+          <p class="text-white/60 text-[12.5px] mt-1">Years in HR &amp; People Ops</p>
         </div>
         <div class="bg-white/5 border border-white/10 rounded-xl p-5">
-          <p class="font-display font-extrabold text-mint-light text-3xl">32</p>
-          <p class="text-white/60 text-[12.5px] mt-1">Offers rolled out in one drive</p>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-xl p-5">
-          <p class="font-display font-extrabold text-mint-light text-3xl">12</p>
-          <p class="text-white/60 text-[12.5px] mt-1">HR functions documented</p>
+          <p class="font-display font-extrabold text-mint-light text-3xl">5</p>
+          <p class="text-white/60 text-[12.5px] mt-1">Career stages across 4 orgs</p>
         </div>
         <div class="bg-white/5 border border-white/10 rounded-xl p-5">
           <p class="font-display font-extrabold text-mint-light text-3xl">2</p>
-          <p class="text-white/60 text-[12.5px] mt-1">Custom automation tools built</p>
+          <p class="text-white/60 text-[12.5px] mt-1">Internal promotions / progressions</p>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-5">
+          <p class="font-display font-extrabold text-mint-light text-3xl">1</p>
+          <p class="text-white/60 text-[12.5px] mt-1">HR product built &amp; launched</p>
         </div>
       </div>
       <p class="text-white/40 text-[11.5px] font-mono mt-6">Figures reflect roles held since 2020, per professional history.</p>
@@ -929,10 +1873,10 @@
       </div>
       <div class="flex items-center gap-2.5">
         <button id="tPrev" aria-label="Previous testimonial" class="w-10 h-10 rounded-full border border-navy/15 flex items-center justify-center hover:border-mint transition-colors">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B2340" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         </button>
         <button id="tNext" aria-label="Next testimonial" class="w-10 h-10 rounded-full border border-navy/15 flex items-center justify-center hover:border-mint transition-colors">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0B2340" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
         </button>
       </div>
     </div>
@@ -954,7 +1898,8 @@
     <div class="text-center max-w-xl mx-auto" data-reveal>
       <span class="eyebrow text-mint-light">// 08 — GET IN TOUCH</span>
       <h2 class="font-display font-bold text-[clamp(1.9rem,3.4vw,2.8rem)] text-white mt-3 leading-tight">Let's talk people operations.</h2>
-      <p class="text-white/60 text-[15px] mt-4">Open to conversations on HR operations, compliance frameworks, or your next people-ops hire.</p>
+      <p class="text-white/60 text-[15px] mt-4">HR &amp; Admin Lead at Ashish Polymers. Open to conversations on HR operations, compliance frameworks, collaboration, or your next people-ops hire.</p>
+      <p class="inline-flex items-center justify-center gap-2 text-mint text-[13px] font-semibold mt-3 w-full"><span class="w-2 h-2 rounded-full bg-mint animate-pulse inline-block"></span>Actively exploring new opportunities</p>
     </div>
 
     <div class="flex flex-wrap items-center justify-center gap-3.5 mt-10">
@@ -965,6 +1910,10 @@
       <a href="mailto:hagarwal193@gmail.com" class="inline-flex items-center gap-2 border border-white/20 text-white font-semibold text-sm px-6 py-3.5 rounded-full hover:border-mint transition-colors">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
         Email
+      </a>
+      <a href="https://salary-analyzer.hagarwal193.workers.dev/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-mint/50 text-mint font-semibold text-sm px-6 py-3.5 rounded-full hover:bg-mint hover:text-navy-deep transition-colors">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        Salary Analyzer
       </a>
       <a href="https://wa.me/918445466132" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-white/20 text-white font-semibold text-sm px-6 py-3.5 rounded-full hover:border-mint transition-colors">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.02 2C6.5 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.08L2 22l5.06-1.32A9.93 9.93 0 0 0 12.02 22C17.55 22 22 17.5 22 12S17.55 2 12.02 2zm0 18.07c-1.67 0-3.23-.46-4.56-1.27l-.33-.2-3 .78.8-2.93-.21-.34A8.05 8.05 0 0 1 3.94 12c0-4.45 3.62-8.07 8.08-8.07S20.1 7.55 20.1 12s-3.62 8.07-8.08 8.07zm4.4-6.06c-.24-.12-1.4-.7-1.62-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.42-1.34-1.66-.14-.24-.02-.38.12-.5.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.04-.34-.04-.46-.08-.12-.5-1.2-.68-1.64-.18-.42-.36-.36-.5-.37h-.43c-.14 0-.38.06-.58.28-.2.22-.78.76-.78 1.86 0 1.1.8 2.16.92 2.32.12.16 1.56 2.4 3.8 3.27 2.24.88 2.24.6 2.66.56.42-.04 1.4-.58 1.6-1.13.2-.56.2-1.04.14-1.13-.06-.1-.24-.16-.48-.28z"/></svg>
@@ -998,7 +1947,7 @@
         <span class="w-8 h-8 rounded-lg bg-navy flex items-center justify-center p-1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAoCAYAAACvpem4AAADhUlEQVR42u3WP2wbVRwH8O/v99757LNNHEf9o4qkVkyUTh3IgASBy4BoB1cIkAVSM9ChgiFMHWCzOnRgYYZKXRGSB6SC2lJFSCeB1IIQTFUGCHUDLQLk1Kl9zvnuvV8HO6JFwOQKC+4z3u/eT/rd9969A1KpVCqVSqVSQzT+fo1Rz7P24VKDR9cFgPzzval/PVECIDOLTxfjZOYAxdZ2bnVvAUEyLNfV1NzdOXGyClHU3vnpartw8Pg+8lRpYJI4an1281EPymPp4vsKAHbt/ppkShsm632bnXcO7ZULB++VjTt9TdzyRuLm3wQAKRa/RGbqRiY3vVGYP/HM8GHV1WQPOqKEiUgpkNJ/rgmRBmklgrAwX1tmx1sQCJPKusKZMwAE9UlPdMQAEIhAYCUhhXpdoV5X1mUFEQsIyCYhVG4NxBZJcseaKGKVqRUO146g2bR/fLQmeNAH931Ev26j2TRoNk3YutQG4EnS74iJ74B1DdawibtrZJOvyMk7cDJrw1Rv0KMYVI+3nRAgAMHJO9ULVK2GYAACTdr1bByeV673JDv5vIk6W/3W5Yv56kuzSsyzYOekN3fsXNhs/jIKwE56oiCQ0rnyy+zNrHJ2ZpWz5dcgVmzcuwLWqxALWPMhANv74eP37aB3k518iTO50wAEvs8TnugoV4gxYfsjAd0DAGI1A5uUFLtl0t4TNgl3Tdy9mKueeBGWLcRsiNhZsHMa+/z3EAS9vSNrQgclAQgQxN32d2vY3uwAQH7/Uwco+9hzcKffIHZE4u4669yykz/0rphdiFiIHYB17vFCqXSy+xs+gO9rBHvn8IQmCgi5xWo5Ojrbw89HVW/36x2PeYfZWRE7IJj4U2I+bKLOVdjYAFAALYCdClHmLcC/gCAwk/vqkhWIJCBKSItBECRYWiR8fy3ihVdeJeWITfodG/c+6W+t335waWH++LIoHZDKHvHmSy+Em7g0zlTHuulZKMs6q4l4Sowa9v7mfFysHFsk5Z4i5WrY5PP+1vpt+L4enpkNht/Q3c0rX4iJrrNbVKwz57C05CBYsZOVaBBYAJBB/7rhu2+LjQaRs93eK9vEZCiJ3pFkILDhZQA0XDNch6Ax/LOy0VoS/v48mYEp/6hybZzdGfdH6T9v3D/RBL+hUQGj1bIPX/c1KhVG63UAwd8k1GD4K+ov1qdSqVQqlUqlUqn/u/sMZHqsvNH3rQAAAABJRU5ErkJggg==" alt="HA logo" class="w-full h-full object-contain" style="filter:brightness(0) invert(1);" /></span>
         <span class="font-display text-white text-[14px]">Harsh Agarwal</span>
       </div>
-      <p class="text-white/40 text-[12.5px] font-mono">© 2026 Harsh Agarwal · HR &amp; Admin Executive</p>
+      <p class="text-white/40 text-[12.5px] font-mono">© 2026 Harsh Agarwal · HR &amp; Admin Lead</p>
     </div>
   </div>
 </footer>
@@ -1049,7 +1998,7 @@ document.querySelectorAll('.mobile-link').forEach(a => a.addEventListener('click
 /* ===================================================================
    SECTION TRACKING (nav links + scroll rail dots + up/down buttons)
 =================================================================== */
-const sectionIds = ['home','about','handbook','skills','experience','projects','credentials','testimonials','contact'];
+const sectionIds = ['home','about','career-journey','what-i-do','handbook','skills','experience','projects','credentials','testimonials','contact'];
 const sections = sectionIds.map(id => document.getElementById(id));
 const navLinks = document.querySelectorAll('.nav-link');
 const railDots = document.querySelectorAll('.rail-dot-wrap');
@@ -1100,7 +2049,13 @@ document.querySelectorAll('#chapterAccordion .accordion-item').forEach(item => {
    REVEAL ON SCROLL
 =================================================================== */
 const revealEls = document.querySelectorAll('[data-reveal]');
-revealEls.forEach(el => { el.style.opacity = 0; el.style.transform = 'translateY(18px)'; el.style.transition = 'opacity .7s ease, transform .7s ease'; });
+revealEls.forEach(el => {
+  el.style.opacity = 0;
+  el.style.transform = 'translateY(18px)';
+  // Preserve any inline transition-delay already set via style attribute
+  const existingDelay = el.style.transitionDelay || el.getAttribute('style')?.match(/transition-delay:\s*([^;]+)/)?.[1] || '0s';
+  el.style.transition = `opacity .7s ease ${existingDelay}, transform .7s ease ${existingDelay}`;
+});
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -1111,6 +2066,155 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 revealEls.forEach(el => revealObserver.observe(el));
+
+
+
+
+/* ===================================================================
+   EXPERIENCE EXPAND / COLLAPSE
+=================================================================== */
+function toggleExp(id) {
+  const extras = document.querySelectorAll('#exp-body-' + id + ' .exp-extra');
+  const label  = document.getElementById('exp-toggle-label-' + id);
+  const icon   = document.getElementById('exp-toggle-icon-' + id);
+  const isOpen = label && label.textContent.includes('Hide');
+
+  extras.forEach(el => {
+    if (isOpen) {
+      el.classList.remove('visible');
+      setTimeout(() => el.classList.add('hidden'), 280);
+    } else {
+      el.classList.remove('hidden');
+      requestAnimationFrame(() => el.classList.add('visible'));
+    }
+  });
+
+  if (label) label.textContent = isOpen ? 'View all responsibilities' : 'Hide responsibilities';
+  if (icon)  icon.style.transform = isOpen ? '' : 'rotate(180deg)';
+  if (icon)  icon.style.transition = 'transform .3s ease';
+}
+
+/* ===================================================================
+   DYNAMIC YEAR COUNTER (from Aug 2023)
+=================================================================== */
+(function () {
+  const snapEl = document.getElementById('snap-years');
+  if (!snapEl) return;
+  function calcYears() {
+    const start = new Date(2023, 7, 1); // Aug 2023
+    const now   = new Date();
+    const diff  = (now - start) / (1000 * 60 * 60 * 24 * 365.25);
+    return Math.floor(diff * 10) / 10; // one decimal
+  }
+  const years = calcYears();
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const dur = 1400, start = performance.now();
+      (function tick(now) {
+        const p = Math.min((now - start) / dur, 1);
+        const e = 1 - Math.pow(1 - p, 3);
+        snapEl.textContent = (e * years).toFixed(1) + '+';
+        if (p < 1) requestAnimationFrame(tick);
+      })(performance.now());
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.5 });
+  obs.observe(snapEl);
+})();
+
+/* ===================================================================
+   CAREER JOURNEY — TIMELINE LINE DRAW ANIMATION
+=================================================================== */
+const cjLine = document.querySelector('.cj-line');
+if (cjLine) {
+  const lineObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        cjLine.style.transition = 'height 1.4s cubic-bezier(0.22,1,0.36,1)';
+        cjLine.style.height = '100%';
+        lineObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  cjLine.style.height = '0%';
+  lineObserver.observe(cjLine.parentElement);
+}
+
+/* ===================================================================
+   COUNTER ANIMATION (triggers once on viewport entry)
+=================================================================== */
+document.querySelectorAll('[data-count]').forEach(el => {
+  const target = parseFloat(el.getAttribute('data-count'));
+  const duration = 1600;
+  let started = false;
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !started) {
+        started = true;
+        const start = performance.now();
+        function tick(now) {
+          const pct = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - pct, 3);
+          el.textContent = Number.isInteger(target)
+            ? Math.round(eased * target)
+            : (eased * target).toFixed(1);
+          if (pct < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+        counterObs.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  counterObs.observe(el);
+});
+
+/* ===================================================================
+   SKILL BAR FILL — animate only on scroll-into-view
+=================================================================== */
+document.querySelectorAll('.skill-fill').forEach(bar => {
+  const targetW = bar.getAttribute('data-width') || bar.style.width;
+  bar.style.width = '0%';
+  bar.style.transition = 'none';
+  const barObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        requestAnimationFrame(() => {
+          bar.style.transition = 'width 1.1s cubic-bezier(0.22,1,0.36,1)';
+          bar.style.width = targetW;
+        });
+        barObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+  barObs.observe(bar);
+});
+
+/* ===================================================================
+   PROJECT CARDS — Salary Analyzer subtle animated border glow
+=================================================================== */
+const saCard = document.querySelector('.salary-analyzer-card');
+if (saCard) {
+  let hue = 0;
+  function rotateBorder() {
+    hue = (hue + 0.5) % 360;
+    saCard.style.boxShadow = `0 0 0 1.5px rgba(21,184,166,${0.25 + 0.15 * Math.sin(hue * Math.PI / 180)}), 0 20px 48px -16px rgba(21,184,166,0.18)`;
+    requestAnimationFrame(rotateBorder);
+  }
+  rotateBorder();
+}
+
+/* ===================================================================
+   PREFERS-REDUCED-MOTION — disable all custom animations
+=================================================================== */
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('[data-reveal]').forEach(el => {
+    el.style.opacity = 1;
+    el.style.transform = 'none';
+  });
+  const allAnimated = document.querySelectorAll('[style*="transition"]');
+  allAnimated.forEach(el => el.style.transition = 'none');
+}
 
 /* ===================================================================
    TESTIMONIALS CAROUSEL
@@ -1262,6 +2366,196 @@ goToSlide(0);
     if (el) el.href = href;
   });
 })();
+
+
+
+/* ╔══════════════════════════════════════════════════════════════╗
+   ║  PREMIUM ANIMATION ENGINE — v4                               ║
+   ╚══════════════════════════════════════════════════════════════╝ */
+
+(function () {
+  'use strict';
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var isTouch  = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+
+  /* ── 1. SCROLL PROGRESS BAR ────────────────────────────────── */
+  var spFill = document.getElementById('scroll-progress-fill');
+  function updateProgress() {
+    if (!spFill) return;
+    var dh = document.documentElement.scrollHeight - window.innerHeight;
+    spFill.style.width = (dh > 0 ? Math.min(100, (window.scrollY / dh) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+
+  /* ── 2. HERO SEQUENTIAL ENTRANCE ──────────────────────────── */
+  function runHeroSeq() {
+    var items = document.querySelectorAll('.hero-seq');
+    items.forEach(function (el) {
+      var delay = parseInt(el.getAttribute('data-delay') || '0', 10);
+      setTimeout(function () {
+        el.classList.add('ready');
+      }, 120 + delay);
+    });
+  }
+  // Run after preloader hides
+  var heroTimer = setTimeout(runHeroSeq, 900);
+
+  /* ── 3. UNIFIED INTERSECTION REVEAL (rv / wid-stagger / skill-bar-fill) */
+  function makeRevealObs(selector, addFn, opts) {
+    var els = document.querySelectorAll(selector);
+    if (!els.length) return;
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          addFn(entry.target);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, opts || { threshold: 0.18 });
+    els.forEach(function (el) { obs.observe(el); });
+  }
+
+  // Scroll-reveal classes
+  if (!reduced) {
+    makeRevealObs('.rv,.rv-left,.rv-right,.rv-scale', function (el) {
+      var d = el.getAttribute('data-delay');
+      if (d) el.style.transitionDelay = d + 'ms';
+      el.classList.add('in');
+    });
+
+    // What I Do stagger
+    makeRevealObs('.wid-stagger', function (el) {
+      var delay = parseInt(el.getAttribute('data-delay') || '0', 10);
+      setTimeout(function () { el.classList.add('in'); }, delay);
+    });
+  } else {
+    // reduced motion: show immediately
+    document.querySelectorAll('.rv,.rv-left,.rv-right,.rv-scale,.wid-stagger').forEach(function (el) {
+      el.classList.add('in');
+    });
+  }
+
+  /* ── 4. SKILL BARS (animate once on scroll) ────────────────── */
+  var skillObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var target = entry.target.getAttribute('data-width') || '0%';
+        setTimeout(function () {
+          entry.target.style.width = target;
+        }, reduced ? 0 : 120);
+        skillObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('.skill-bar-fill').forEach(function (bar) {
+    skillObs.observe(bar);
+  });
+
+  /* ── 5. BACK TO TOP BUTTON ─────────────────────────────────── */
+  var toTopBtn = document.getElementById('toTop');
+  function updateToTop() {
+    if (!toTopBtn) return;
+    if (window.scrollY > 340) toTopBtn.classList.add('show');
+    else toTopBtn.classList.remove('show');
+  }
+  window.addEventListener('scroll', updateToTop, { passive: true });
+  if (toTopBtn) {
+    toTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
+    });
+  }
+
+  /* ── 6. CAREER JOURNEY TIMELINE DRAW (mobile cj-line + desktop) */
+  var cjLine = document.querySelector('.cj-line');
+  if (cjLine && !reduced) {
+    cjLine.style.height = '0%';
+    var cjObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          cjLine.style.height = '100%';
+          cjObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    cjObs.observe(cjLine.parentElement || cjLine);
+  } else if (cjLine) {
+    cjLine.style.height = '100%';
+  }
+
+  /* ── 7. HANDBOOK 3D TILT (desktop only, no touch) ─────────── */
+  var tiltWrap  = document.getElementById('handbook-tilt');
+  var tiltInner = tiltWrap && tiltWrap.querySelector('.handbook-tilt-inner');
+  if (tiltWrap && tiltInner && !isTouch && !reduced) {
+    tiltInner.style.animation = 'none'; // pause float while mouse is on it
+    tiltWrap.addEventListener('mousemove', function (e) {
+      var rect  = tiltWrap.getBoundingClientRect();
+      var cx    = rect.left + rect.width  / 2;
+      var cy    = rect.top  + rect.height / 2;
+      var dx    = (e.clientX - cx) / (rect.width  / 2);
+      var dy    = (e.clientY - cy) / (rect.height / 2);
+      var rotX  = (-dy * 6).toFixed(2);
+      var rotY  = ( dx * 6).toFixed(2);
+      tiltInner.style.transform = 'perspective(900px) rotateX(' + rotX + 'deg) rotateY(' + rotY + 'deg) scale(1.025)';
+    });
+    tiltWrap.addEventListener('mouseleave', function () {
+      tiltInner.style.transform = '';
+      tiltInner.style.animation = '';
+    });
+    // Resume float when mouse leaves
+    tiltWrap.addEventListener('mouseenter', function () {
+      tiltInner.style.animation = 'none';
+    });
+  }
+
+  /* ── 8. EXISTING revealObserver upgrade — honour transition-delay ─ */
+  // The existing revealObserver is already wired; our hero-seq runs separately.
+  // Add the promoted-milestone glow trigger via existing reveal watcher.
+
+  /* ── 9. SCROLL EVENTS combined ─────────────────────────────── */
+  window.addEventListener('scroll', function () {
+    updateProgress();
+    updateToTop();
+  }, { passive: true });
+
+  /* ── 10. MOBILE MENU — close on link click ─────────────────── */
+  var mobileLinks = document.querySelectorAll('.mobile-link');
+  var mobileMenu  = document.getElementById('mobileMenu');
+  mobileLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (mobileMenu && !mobileMenu.classList.contains('hidden-menu')) {
+        var closeBtn = document.getElementById('menuClose');
+        if (closeBtn) closeBtn.click();
+      }
+    });
+  });
+
+  /* ── 11. BUTTON RIPPLE (tasteful, optional) ─────────────────── */
+  // Not adding ripple — keeps it corporate/premium not app-like.
+
+  /* ── 12. CJ promoted node glow class ───────────────────────── */
+  var promoNodes = document.querySelectorAll('.promoted, .cj-dot.promoted');
+  promoNodes.forEach(function (el) { el.classList.add('promoted-node'); });
+
+  /* ── 13. Experience timeline line draw (existing timeline-spine) ─ */
+  var tlSpine = document.querySelector('.timeline-spine');
+  if (tlSpine && !reduced) {
+    tlSpine.style.height = '0%';
+    tlSpine.style.transition = 'height 1.8s cubic-bezier(.22,1,.36,1)';
+    var tlObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          tlSpine.style.height = '100%';
+          tlObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.04 });
+    var expSection = document.getElementById('experience');
+    if (expSection) tlObs.observe(expSection);
+  }
+
+})(); // end IIFE
+
 </script>
 
 </body>
